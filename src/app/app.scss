@@ -1,0 +1,32 @@
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+
+  span:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.page-content {
+  padding-top: 64px;
+}
+.mat-mdc-button {
+  font-size: 1rem;
+  color: #cbd5e1;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #a5b4fc;
+  }
+}

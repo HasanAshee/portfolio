@@ -1,0 +1,54 @@
+$secondary-text-color: #94a3b8;
+
+.hero-container {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  background-color: #0f172a;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: white;
+
+  span {
+    color: $secondary-text-color;
+  }
+}
+
+p {
+  font-size: 1.25rem;
+  color: $secondary-text-color;
+  max-width: 600px;
+  margin: 25px auto;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  a {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+  .github-button {
+    background-color: #334155;
+    color: white;
+  }
+}

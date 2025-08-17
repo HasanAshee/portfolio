@@ -1,0 +1,33 @@
+// Usamos los mismos colores que en las secciones anteriores
+$primary-text-color: #e2e8f0;
+$secondary-text-color: #94a3b8;
+$accent-color: #93c5fd;
+
+.contact-container {
+  padding: 80px 20px;
+  background-color: #0f172a;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $accent-color;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: $secondary-text-color;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+// Estilo para el botón de Material
+.mat-mdc-raised-button.mat-primary {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+}

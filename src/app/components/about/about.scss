@@ -1,0 +1,23 @@
+$secondary-text-color: #94a3b8;
+$accent-color: #93c5fd;
+
+.about-container {
+  padding: 120px 20px 80px 20px;
+  background-color: #0f172a;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $accent-color;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: $secondary-text-color;
+  max-width: 800px;
+  margin: 0 auto;
+}

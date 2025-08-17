@@ -1,0 +1,117 @@
+
+$card-background: #1e293b;
+$tag-background: #334155;
+$primary-text-color: #e2e8f0;
+$secondary-text-color: #94a3b8;
+$accent-color: #93c5fd;
+$link-color: #a5b4fc;
+
+.projects-container {
+  padding: 80px 20px;
+  background-color: #0f172a;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $accent-color;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: $card-background;
+  color: $primary-text-color;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(147, 197, 253, 0.1);
+  }
+
+
+  img {
+    height: 45%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  mat-card-header {
+    padding: 16px 16px 8px 16px;
+  }
+
+  mat-card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  mat-card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 8px 16px 16px 16px;
+
+    p {
+      color: $secondary-text-color;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    .mat-mdc-chip-set {
+        padding-bottom: 8px;
+    }
+
+    .mat-mdc-chip {
+      background-color: $tag-background !important;
+      color: $primary-text-color !important;
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      min-height: 24px;
+    }
+  }
+
+  mat-card-actions {
+    padding: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    a {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+
+      mat-icon {
+        margin-right: 6px;
+        font-size: 20px;
+      }
+    }
+
+    a:not(.code-link) {
+      color: $link-color;
+    }
+
+    .code-link {
+      color: $secondary-text-color;
+      transition: color 0.3s ease;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
